@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Post Generator for X.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <div class="card">
+            <header class="card-header">
+                <h1>AI Post Generator for X.com 🚀</h1>
+                <p>Generate relevant posts based on US trends from Trends24 and your link.</p>
+            </header>
+
+            <section class="card-body">
+                <div class="input-group">
+                    <label for="linkInput">Enter your link here:</label>
+                    <input type="url" id="linkInput" placeholder="https://example.com/my-article" required>
+                </div>
+                <button id="generateBtn">
+                    <span class="btn-text">✨ Create Post</span>
+                    <span class="spinner" style="display: none;"></span>
+                </button>
+            </section>
+
+            <section id="outputSection" class="output-section" style="display: none;">
+                <label>Generated Post:</label>
+                <div class="output-box">
+                    <p id="outputText"></p>
+                </div>
+                <div class="action-buttons">
+                    <button id="copyBtn">📄 Copy Result</button>
+                    <button id="postBtn">🐦 Post to X.com</button>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p>Powered by Gemini API & Trends24 Data</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
