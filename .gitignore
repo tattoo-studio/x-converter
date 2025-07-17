@@ -1,0 +1,8 @@
+# Folder dependensi Node.js (ukurannya besar dan tidak perlu diunggah)
+node_modules
+
+# File yang berisi kunci API rahasia Anda
+gemini.txt
+
+# File environment lain yang mungkin bersifat rahasia
+.env
